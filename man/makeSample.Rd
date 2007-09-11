@@ -1,6 +1,5 @@
 \name{makeSample}
 \alias{makeSample}
-%- Also NEED an '\alias' for EACH other topic documented here.
 \title{ create a sample of the first model stored in a file  }
 \description{
    make a sample of the first model, that is to say simulate 
@@ -13,12 +12,12 @@ makeSample(file, nbPatient, disXi, disP)
   \item{file}{ the filename in which the simulation will be stored }
   \item{nbPatient}{ the number of patients for the simulation }
   \item{disXi}{ the distribution of the variable Xi :
-disXi is a 3 elements list : rangen <=>  a random positive variable generator
-       ; nbparam <=> number of parameter of this distribution and param <=> a list of parameters
+disXi is a 3 elements list : rangen stands for  a random positive variable generator
+       ; nbparam for number of parameter of this distribution and param for a list of parameters
  }
   \item{disP}{ the side effect probability (success  probability of Zi) p :
-disP is a 3 elements list : disfun <=> a distribution function
-       ; nbparam <=> number of parameter of this distribution and param <=> a list of parameters
+disP is a 3 elements list : disfun stands for a distribution function
+       ; nbparam for number of parameter of this distribution and param for a list of parameters
  }
 }
 \value{
@@ -31,4 +30,4 @@ arg2Exp<-list(disfun=pexp,nbparam=1,param=list(1/5));
 
 makeSample("mydata.rda",200,arg1Exp,arg2Exp)
 }
-\keyword{ file }% at least one, from doc/KEYWORDS
+\keyword{ file }

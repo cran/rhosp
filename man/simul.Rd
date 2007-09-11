@@ -1,6 +1,5 @@
 \name{simul}
 \alias{simul}
-%- Also NEED an '\alias' for EACH other topic documented here.
 \title{ simulate the first model of the hospital risk }
 \description{
   simul simulate the first model of the hospital that is to say 
@@ -12,16 +11,15 @@ succes p is passed as an argument)
 \usage{
 simul(nbPatient, disXi, disP, toplot = TRUE)
 }
-%- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{nbPatient}{the number of patient of the simulation }
   \item{disXi}{ the distribution of the variable Xi :
-disXi is a 3 elements list : rangen <=>  a random positive variable generator
-       ; nbparam <=> number of parameter of this distribution and param <=> a list of parameters
+disXi is a 3 elements list : rangen stands for  a random positive variable generator
+       ; nbparam for number of parameter of this distribution and param for a list of parameters
  }
   \item{disP}{ the side effect probability (success  probability of Zi) p :
-disP is a 3 elements list : disfun <=> a distribution function
-       ; nbparam <=> number of parameter of this distribution and param <=> a list of parameters
+disP is a 3 elements list : disfun stands for a distribution function
+       ; nbparam for number of parameter of this distribution and param for a list of parameters
  }
   \item{toplot}{ a logical variable to plot the variable Zi }
 }
@@ -54,4 +52,4 @@ T<-simul(100,arg1Lnorm,arg2Gamma)
 
 
 }
-\keyword{ utilities }% at least one, from doc/KEYWORDS
+\keyword{ utilities }

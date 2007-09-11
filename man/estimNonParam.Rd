@@ -1,11 +1,10 @@
 \name{estimNonParam}
 \alias{estimNonParam}
-%- Also NEED an '\alias' for EACH other topic documented here.
 \title{ compute the parametric estimation}
 \description{
    estimParam compute the parametric estimation of the first model on the input file
    containing the stay duration Xi and the side effect reporting Zi. this estimator of R (and not mu)
-   is the smallest root of the equation (*) : P(Zi=0)E[exp(-RXi)/Zi=0]=1
+   is the smallest root of the equation \eqn{(*) : P(Zi=0)E[exp(-RXi)/Zi=0]=1}
 }
 \usage{
 estimNonParam(fileName, toplot = TRUE, header = TRUE, ks = FALSE, DV = FALSE)
@@ -25,8 +24,8 @@ estimNonParam(fileName, toplot = TRUE, header = TRUE, ks = FALSE, DV = FALSE)
   \item{T}{the vector of observations of the random variable T}
   \item{lambdaHat}{the best estimation of lambda : the ESBVM of lambda}
   \item{muHat}{not available with this estimation}
-  \item{lambdaEmp}{the estimation of the lambda of the De Vielder method (only available if DV=TRUE and if there is no problem with De Vielder method)}
-  \item{muEmp}{the estimation of the mu of the De Vielder method (only available if DV=TRUE)}
+  \item{lambdaEmp}{the estimation of the lambda of the De Vielder method (only available if \code{DV=TRUE} and if there is no problem with De Vielder method)}
+  \item{muEmp}{the estimation of the mu of the De Vielder method (only available if \code{DV=TRUE})}
 }
 \author{CJ }
 \examples{
@@ -34,4 +33,4 @@ estimNonParam(fileName, toplot = TRUE, header = TRUE, ks = FALSE, DV = FALSE)
 #res<-estimDV("data.rda",TRUE,TRUE)
 
 }
-\keyword{ htest }% at least one, from doc/KEYWORDS
+\keyword{ htest }

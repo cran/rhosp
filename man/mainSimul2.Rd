@@ -1,6 +1,5 @@
 \name{mainSimul2}
 \alias{mainSimul2}
-%- Also NEED an '\alias' for EACH other topic documented here.
 \title{ simulate many times the second model }
 \description{
  main simulates nbBed times the second model with the function simul
@@ -8,17 +7,16 @@
 \usage{
 mainSimul2(nbBed, nbPatient, disXi, disYi, toplot = FALSE)
 }
-%- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{nbBed}{ the number of beds }
   \item{nbPatient}{ the number of patient in each bed }
   \item{disXi}{ the distribution of the variable Xi :
-disXi is a 3 elements list : rangen <=>  a random positive variable generator
-       ; nbparam <=> number of parameter of this distribution and param <=> a list of parameters
+disXi is a 3 elements list : rangen stands for  a random positive variable generator
+       ; nbparam for number of parameter of this distribution and param for a list of parameters
  }
   \item{disYi}{ the distribution of the variable Yi :
-disYi is a 3 elements list : rangen <=>  a random positive variable generator
-       ; nbparam <=> number of parameter of this distribution and param <=> a list of parameters
+disYi is a 3 elements list : rangen for  a random positive variable generator
+       ; nbparam for number of parameter of this distribution and param for a list of parameters
  }
   \item{toplot}{ a logical variable to plot the variable Zi }
 }
@@ -48,4 +46,4 @@ T<-mainSimul2(100,100,arg1ExpMod2,arg2ExpMod2)
 
 
 }
-\keyword{ survey }% at least one, from doc/KEYWORDS
+\keyword{ survey }

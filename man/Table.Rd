@@ -1,6 +1,5 @@
 \name{Table}
 \alias{Table}
-%- Also NEED an '\alias' for EACH other topic documented here.
 \title{ make an array of bias, variance and R for different distribution and estimators  }
 \description{
    this function prints an array of the bias, variance, risk constants R and CR for three estimators
@@ -68,4 +67,4 @@ Table(file, nb = 10, mod)
 #CR   7.709814e+01 1.468196e+02
 #
 }
-\keyword{ htest }% at least one, from doc/KEYWORDS
+\keyword{ htest }

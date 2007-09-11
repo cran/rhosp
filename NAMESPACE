@@ -1,0 +1,5 @@
+### Exports
+export(
+		adequadExp, calcErrorDV, calcErrorNonParam, calcErrorParam, DV, estimDV, estimNonParam,
+		estimParam, histo, KM, mainSimul2, mainSimul, makeSample2, makeSample, simul2, simul, Table
+       )

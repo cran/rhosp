@@ -1,9 +1,8 @@
 \name{histo}
 \alias{histo}
-%- Also NEED an '\alias' for EACH other topic documented here.
 \title{ plot the histogram of the variable T }
 \description{
-   plot of the random variable T and the equivalent function (t->CR*exp(-R*t)).
+   plot of the random variable T and the equivalent function (\eqn{t->CR*exp(-R*t)}).
    in some cases, there are also plotted the theoretical and the De Vielder functions
 }
 \usage{
@@ -11,17 +10,17 @@ histo(X, disXi = NULL, disP = NULL, plotDV = FALSE)
 }
 \arguments{
   \item{X}{ a list with the following components : T the observation of the random variable ; R the risk constant (estimated or theoretical calculated)
-  ; CR the risk constand deduced from R ; lambdaEmp the estimation of the lambda of the De Vielder method (only available if DV=TRUE and if there is no problem with De Vielder method)
-  ; muEmp the estimation of the mu of the De Vielder method (only available if DV=TRUE); lambdaHat the best estimation of lambda : the ESBVM of lambda
+  ; CR the risk constand deduced from R ; lambdaEmp the estimation of the lambda of the De Vielder method (only available if \code{DV=TRUE} and if there is no problem with De Vielder method)
+  ; muEmp the estimation of the mu of the De Vielder method (only available if \code{DV=TRUE}); lambdaHat the best estimation of lambda : the ESBVM of lambda
   ; muHat the best estimation of mu : the value of mu which maximize the loglikelihood (only available if the parametric estimation has been done)}
   \item{disXi}{ the distribution of the variable Xi :
-disXi is a 3 elements list : rangen <=>  a random positive variable generator
-       ; nbparam <=> number of parameter of this distribution and param <=> a list of parameters
+disXi is a 3 elements list : rangen stands for  a random positive variable generator
+       ; nbparam for number of parameter of this distribution and param for a list of parameters
  }
 
   \item{disP}{ he side effect probability (success  probability of Zi) p :
-disP is a 3 elements list : disfun <=> a distribution function
-       ; nbparam <=> number of parameter of this distribution and param <=> a list of parameters
+disP is a 3 elements list : disfun stands for a distribution function
+       ; nbparam for number of parameter of this distribution and param for a list of parameters
  }
   \item{plotDV}{ a logical for : do you want to plot the De Vielder "function" }
 }
@@ -47,4 +46,4 @@ T<-mainSimul(100,100,arg1Exp,arg2Exp)
 
 histo(T,arg1Exp,arg2Exp)
 }
-\keyword{ print }% at least one, from doc/KEYWORDS
+\keyword{ print }

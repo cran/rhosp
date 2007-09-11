@@ -1,10 +1,9 @@
 \name{estimDV}
 \alias{estimDV}
-%- Also NEED an '\alias' for EACH other topic documented here.
 \title{ compute the De Vielder estimator  }
 \description{
-   compute the De Vielder estimator, in other words, do the same function as 'DV' 
-   but returns more details about this estimator whereas 'DV' only compute the lambda
+   compute the De Vielder estimator, in other words, do the same function as \code{DV} 
+   but returns more details about this estimator whereas \code{DV} only compute the lambda
    and mu of the De Vielder method
 }
 \usage{
@@ -33,4 +32,4 @@ estimDV(fileName, toplot = TRUE, header = TRUE, ks = FALSE)
 #res<-estimDV("data.rda",TRUE,TRUE)
 
 }
-\keyword{ htest }% at least one, from doc/KEYWORDS
+\keyword{ htest }
