@@ -1,0 +1,34 @@
+\contentsline {section}{\numberline {1}Introduction}{4}
+\contentsline {section}{\numberline {2}Methods and techniques to get the risk constant}{5}
+\contentsline {subsection}{\numberline {2.1}Model with conditioned side effects}{5}
+\contentsline {subsubsection}{\numberline {2.1.1}A constant side effect probability}{6}
+\contentsline {subsubsection}{\numberline {2.1.2}An exponential side effect probability}{7}
+\contentsline {subsubsection}{\numberline {2.1.3}An exponentially mixed side effect probability}{7}
+\contentsline {subsubsection}{\numberline {2.1.4}Any side effect probability}{8}
+\contentsline {subsubsection}{\numberline {2.1.5}General case}{9}
+\contentsline {subsection}{\numberline {2.2}Model with random side effects}{9}
+\contentsline {subsubsection}{\numberline {2.2.1}Censored stay durations}{9}
+\contentsline {subsubsection}{\numberline {2.2.2}Uncensored stay durations}{10}
+\contentsline {section}{\numberline {3}Estimation and quantification by simulations of the risk constant $R$}{12}
+\contentsline {subsection}{\numberline {3.1}Simulations to quantify an estimator}{12}
+\contentsline {subsubsection}{\numberline {3.1.1}Two examples with exponentially distributed stay durations }{12}
+\contentsline {subsubsection}{\numberline {3.1.2}Two examples not exponentially distributed stay durations: lognormally or uniformly distributed }{13}
+\contentsline {subsubsection}{\numberline {3.1.3}Simulation of the model with random side effect}{14}
+\contentsline {subsection}{\numberline {3.2}The De Vielder's approximation}{15}
+\contentsline {subsection}{\numberline {3.3}An inference of the risk constant $R$}{16}
+\contentsline {subsubsection}{\numberline {3.3.1}A parametric method}{16}
+\contentsline {subsubsection}{\numberline {3.3.2}A non parametric method}{17}
+\contentsline {subsection}{\numberline {3.4}A variant of the Kaplan-Me\~A\={}er estimate}{19}
+\contentsline {section}{\numberline {4}The \texttt {rhosp} package}{21}
+\contentsline {subsection}{\numberline {4.1}A simulation file : \texttt {simul.R}}{21}
+\contentsline {subsection}{\numberline {4.2}An estimation file : \texttt {estim.R}}{21}
+\contentsline {section}{\numberline {5}Conclusion}{23}
+\contentsline {section}{\numberline {6}References}{24}
+\contentsline {section}{\numberline {7}Appendix}{25}
+\contentsline {section}{\numberline {A}Distribution of T in the first model with $X_i \sim \epsilon (\lambda )$ and $Z_i \sim B(p)$ with a constant side effect probability $p$ }{25}
+\contentsline {section}{\numberline {B}Distribution of T with an expression of the survival function}{25}
+\contentsline {section}{\numberline {C}The renewal equation for the survival function }{26}
+\contentsline {section}{\numberline {D}Probability of success for $Z_i \sim \varepsilon (\mu )$ }{26}
+\contentsline {section}{\numberline {E}Probability of success for any $Z_i$}{26}
+\contentsline {section}{\numberline {F}Solving the De Vielder system}{26}
+\contentsline {section}{\numberline {G}A new expression of $(\star )$ }{27}

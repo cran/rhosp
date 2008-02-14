@@ -67,8 +67,6 @@ function(fileName,toplot=TRUE,header=TRUE)
 	
 	tmp <- 1
 	#construction of S : survival function
-	#####WARNING#####
-	#là je suis pas sûre, je crois qu'il faut multiplier que si evt=1
 	for (i in 1:length(durees)){
 		if (evt_trie[i]==1){  #if a side effect has been reported
 	        S[i] <- tmp * (1-H[i]);

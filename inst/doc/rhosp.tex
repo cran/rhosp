@@ -16,10 +16,12 @@
 \usepackage{courier}
 \usepackage{newlfont}
 
+\usepackage[noae]{Sweave}
+
 
 %\usepackage[frenchb]{babel}
 \usepackage[latin1]{inputenc}
-\usepackage[dvips]{graphicx}
+\usepackage{graphicx}
 
 
 %mise en page
@@ -48,12 +50,11 @@
        \\[5cm]
 	\textsf{An actuary approach of risk evaluation during hospitalizations}}
 \vspace{2.5cm}
-\author{Julie Barthés \and Christophe Dutang}
+\author{Julie BarthÃ©s \and Christophe Dutang}
 
 
 
 %==========================================================
-\usepackage{c:/PROGRA~1/R/R-25~1.0/share/texmf/Sweave}
 \begin{document}
 %==========================================================
 
@@ -135,7 +136,7 @@ Several studied cases follow.
 
 \begin{figure}[htb!]
 \begin{center}
-\includegraphics[width=12cm]{mod1.eps} 
+\includegraphics[width=12cm]{mod1.pdf} 
 
 \caption{ The $(X_i)_i$ are the successive durations of treatment for five patients on the same hospital bed. At the end of each treatment, the $(Z_i)_i$ are worth $0$ or $1$ : the patient does not report any side effect or he has a full-blown one. }
 \label{mod1}
@@ -232,7 +233,7 @@ $$f_T(t)=f_{X_1}(t)-\frac{\partial}{\partial t}(\int_{0}^{+\infty}A(t-x)q(x)f_{X
 $$L_T(s)=L_{X_1}(s) - \int_{0}^{+\infty}(\frac{\partial}{\partial t}(\int_{0}^{+\infty}A(t-x)q(x)f_{X_1}(x)dx)e^{-st})dt$$
 
 
-% transition : modèle 1 -> modèle 2
+% transition : modÃ¨le 1 -> modÃ¨le 2
 Here, in this subsection, the longer patients stay in a bed, the weaker they are in their fight against possible side effects. That was our model with conditioned side effects. Nevertheless, we could put forward that reporting a side effect is simply bad luck and happens at a random instant.
 
 
@@ -274,7 +275,7 @@ $
 
 \begin{figure}[htb!]
 \begin{center}
-\includegraphics[width=14cm]{mod2.eps} 
+\includegraphics[width=14cm]{mod2.pdf} 
 
 \caption{ The $(X_i)_i$ are the successive durations of treatment for seven patients on the same hospital bed. The $(Y_i)_i$ are the exposure duration. At the end of each treatment, the $(Z_i)_i$ are worth $0$ or $1$ : the patient does not report any side effect if $Y_i > X_i$ or he has a full-blown one if $Y_i < X_i$ (and then $X_i = Y_i$). }
 \label{mod2}
@@ -356,12 +357,12 @@ far from the histogram. That is to say the tail function overestimates quite pre
 $
 \begin{array}{cc}
 
-\includegraphics[width=7cm]{image_mod1_exp13_exp15_1000_1000.eps} 
+\includegraphics[width=7cm]{image_mod1_exp13_exp15_1000_1000.pdf} 
 
 
 &
 
-\includegraphics[width=7cm]{image_mod1_exp13_cst13_1000_1000.eps} 
+\includegraphics[width=7cm]{image_mod1_exp13_cst13_1000_1000.pdf} 
 
 
 \end{array}
@@ -381,11 +382,11 @@ the sequence of $(Z_i)_i$ has a Bernoulli distribution with a side effect probab
 $
 \begin{array}{cc}
 
-\includegraphics[width=7cm]{image_mod1_exp13_expcomp13_15_110_1000_1000.eps} 
+\includegraphics[width=7cm]{image_mod1_exp13_expcomp13_15_110_1000_1000.pdf} 
 
 &
 
-\includegraphics[width=7cm]{image_mod1_exp13_gamma3_13_1000_1000.eps} 
+\includegraphics[width=7cm]{image_mod1_exp13_gamma3_13_1000_1000.pdf} 
 
 
 \end{array}
@@ -440,7 +441,7 @@ $T$ is nearly an exponential distribution
 \begin{figure}
 $
 \begin{array}{cc}
-\includegraphics[width=8cm]{image_adequat_exp120_unif020.eps} & \includegraphics[width=8cm]{image_adequat_exp13_lnorm14_1.eps} 
+\includegraphics[width=8cm]{image_adequat_exp120_unif020.pdf} & \includegraphics[width=8cm]{image_adequat_exp13_lnorm14_1.pdf} 
 \end{array}$
 \caption{The distribution of the random variable $T$ when the sequence of $(X_i)$ has an uniform distribution (left) or a lognormal distribution (right) } 
 
@@ -459,7 +460,7 @@ variable $T$ and the equivalent function (in this case, we can do it).
 
 \begin{figure}[htb!]
 \begin{center}
-\includegraphics[width=6cm]{image_mod2_exp13_exp15.eps} 
+\includegraphics[width=6cm]{image_mod2_exp13_exp15.pdf} 
 \end{center}
 \caption{ The sequence of $(X_i)_i$ has an exponential distribution with parameter $\lambda=1/3$ and 
 the sequence of $(Y_i)_i$ has an exponential distribution with parameter $\mu=1/5$. The simulation is made for 1000  beds with 1000 patients on each bed within the framework of the model with random side effects.} 
@@ -637,14 +638,14 @@ The most suprising result is that the parametric estimation has the smallest
 bias in each cases. From this simulation, we can conclude that the parametric 
 estimation is better than the non parametric one in terms of bias and variance with those parameters. Other tests with other distributions or parameter values would be very wise to conclude that the parametric estimation is better than the non-parametric one.
 
-\subsection{A variant of the Kaplan-Meïer estimate}
+\subsection{A variant of the Kaplan-MeÃ¯er estimate}
 
-In this subsection, we explain how we adapt the Kaplan-Meïer method in order to plot the survival function $A(t)$.\\
+In this subsection, we explain how we adapt the Kaplan-MeÃ¯er method in order to plot the survival function $A(t)$.\\
 
-We propose a variant of Kaplan-Meïer estimate that offers a way of building the curve of the survival function from data about duration stays in hospitals. 
+We propose a variant of Kaplan-MeÃ¯er estimate that offers a way of building the curve of the survival function from data about duration stays in hospitals. 
 One principle lies at the very heart of this approximation : the survival function remains constant between two successive distincts moments with side effects.\\
 
-A plot of the approximated survival function $\hat A $ is a serie of horizontal steps of declining magnitude which, when a large enough sample of patients is taken, approaches the true survival function for that population. An important advantage of the Kaplan-Meïer curve is that the method can take into account censored data. Indeed, only the patients without full-blown side effects are still being observed.\\
+A plot of the approximated survival function $\hat A $ is a serie of horizontal steps of declining magnitude which, when a large enough sample of patients is taken, approaches the true survival function for that population. An important advantage of the Kaplan-MeÃ¯er curve is that the method can take into account censored data. Indeed, only the patients without full-blown side effects are still being observed.\\
 
 Let us consider for $i$ in  $\left\{ 0,..,n \right\}$, assuming that $i$ stands for the $i^{th}$ time observed:
 \begin{itemize}
@@ -661,9 +662,9 @@ Then, in order to plot the survival function, we work out the instantaneous risk
 h(t)=lim_{dt\rightarrow 0}\frac{P(T<t+dt)/ T \geq t}{dt}
 \end{equation}
 As a result, we have $\hat h(i)=\frac{D(i)}{N(i)}$
-%le numérateur exprime la probabilité pour qu'un individu décède juste après le temps t sachant qu'il était vivant à cet instant. Le risque instantané est donc une probabilité conditionnelle par unité de temps ; il exprime à chaque instant la « force de mortalité ».
+%le numÃ©rateur exprime la probabilitÃ© pour qu'un individu dÃ©cÃ¨de juste aprÃ¨s le temps t sachant qu'il Ã©tait vivant Ã  cet instant. Le risque instantanÃ© est donc une probabilitÃ© conditionnelle par unitÃ© de temps ; il exprime Ã  chaque instant la Â« force de mortalitÃ© Â».
 
-%Connaître la variable aléatoire T, c'est connaître sa fonction de survie, puisqu'elle n'est autre que 1 - sa fonction de répartition.
+%ConnaÃ®tre la variable alÃ©atoire T, c'est connaÃ®tre sa fonction de survie, puisqu'elle n'est autre que 1 - sa fonction de rÃ©partition.
 
 Let us build the survival function assuming that the survival function between successive distinct sampled observations is constant.
 \begin{enumerate}
@@ -680,12 +681,12 @@ Let us build the survival function assuming that the survival function between s
 
 It is difficult to get a feel for the reliability of the curve, especially towards the end. However, we can notice a quite good approximation at the beginning of the approximation. That is interesting because we are especially interested in the value of the survival function at small times. Indeed, we can suppose that most of the patients stay in hospital less than about ten days.
 
-% graphes à reprendre
+% graphes Ã  reprendre
 
 \begin{center}
 \begin{figure}
 $\begin{array}{cc}
-\includegraphics[width=8cm]{d100exp_exp.eps} & \includegraphics[width=8cm]{d1000exp_exp.eps} \\
+\includegraphics[width=8cm]{d100exp_exp.pdf} & \includegraphics[width=8cm]{d1000exp_exp.pdf} \\
 \end{array}$
 \caption{The Kaplan-Meier's variant estimation with $100$ and $1000$ patients, and $(X_i) \sim \varepsilon(\lambda)$ and $p \sim \varepsilon(\mu)$. The green plot is the survival function got thanks to our study ; the red one is the theoretical one.} 
 \end{figure}
@@ -771,7 +772,7 @@ Finally, we could think that we could apply in reality our study. Indeed, given 
 \section{References}
 \begin{itemize}
 	\item \textsl{Aspect of risk theory}, Jean Grandell, 1991
-	\item \textsl{Cours de processus aléatoire de deuxième année \textsc{Ensimag}}, Olivier Fran\c cois, 2004
+	\item \textsl{Cours de processus alÃ©atoire de deuxiÃ¨me annÃ©e \textsc{Ensimag}}, Olivier Fran\c cois, 2004
 	\item \textsl{http://tolstoy.newcastle.edu.au/R/help/04/03/index.html}
 	\item \textsl{http://en.wikipedia.org/wiki/Kaplan-Meier\_estimator}
 \end{itemize}

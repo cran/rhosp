@@ -16,10 +16,12 @@
 \usepackage{courier}
 \usepackage{newlfont}
 
+\usepackage[noae]{Sweave}
+
 
 %\usepackage[frenchb]{babel}
 \usepackage[latin1]{inputenc}
-\usepackage[dvips]{graphicx}
+\usepackage{graphicx}
 
 
 %mise en page
@@ -134,7 +136,7 @@ Several studied cases follow.
 
 \begin{figure}[htb!]
 \begin{center}
-\includegraphics[width=12cm]{mod1.eps} 
+\includegraphics[width=12cm]{mod1.pdf} 
 
 \caption{ The $(X_i)_i$ are the successive durations of treatment for five patients on the same hospital bed. At the end of each treatment, the $(Z_i)_i$ are worth $0$ or $1$ : the patient does not report any side effect or he has a full-blown one. }
 \label{mod1}
@@ -273,7 +275,7 @@ $
 
 \begin{figure}[htb!]
 \begin{center}
-\includegraphics[width=14cm]{mod2.eps} 
+\includegraphics[width=14cm]{mod2.pdf} 
 
 \caption{ The $(X_i)_i$ are the successive durations of treatment for seven patients on the same hospital bed. The $(Y_i)_i$ are the exposure duration. At the end of each treatment, the $(Z_i)_i$ are worth $0$ or $1$ : the patient does not report any side effect if $Y_i > X_i$ or he has a full-blown one if $Y_i < X_i$ (and then $X_i = Y_i$). }
 \label{mod2}
@@ -355,12 +357,12 @@ far from the histogram. That is to say the tail function overestimates quite pre
 $
 \begin{array}{cc}
 
-\includegraphics[width=7cm]{image_mod1_exp13_exp15_1000_1000.eps} 
+\includegraphics[width=7cm]{image_mod1_exp13_exp15_1000_1000.pdf} 
 
 
 &
 
-\includegraphics[width=7cm]{image_mod1_exp13_cst13_1000_1000.eps} 
+\includegraphics[width=7cm]{image_mod1_exp13_cst13_1000_1000.pdf} 
 
 
 \end{array}
@@ -380,11 +382,11 @@ the sequence of $(Z_i)_i$ has a Bernoulli distribution with a side effect probab
 $
 \begin{array}{cc}
 
-\includegraphics[width=7cm]{image_mod1_exp13_expcomp13_15_110_1000_1000.eps} 
+\includegraphics[width=7cm]{image_mod1_exp13_expcomp13_15_110_1000_1000.pdf} 
 
 &
 
-\includegraphics[width=7cm]{image_mod1_exp13_gamma3_13_1000_1000.eps} 
+\includegraphics[width=7cm]{image_mod1_exp13_gamma3_13_1000_1000.pdf} 
 
 
 \end{array}
@@ -439,7 +441,7 @@ $T$ is nearly an exponential distribution
 \begin{figure}
 $
 \begin{array}{cc}
-\includegraphics[width=8cm]{image_adequat_exp120_unif020.eps} & \includegraphics[width=8cm]{image_adequat_exp13_lnorm14_1.eps} 
+\includegraphics[width=8cm]{image_adequat_exp120_unif020.pdf} & \includegraphics[width=8cm]{image_adequat_exp13_lnorm14_1.pdf} 
 \end{array}$
 \caption{The distribution of the random variable $T$ when the sequence of $(X_i)$ has an uniform distribution (left) or a lognormal distribution (right) } 
 
@@ -458,7 +460,7 @@ variable $T$ and the equivalent function (in this case, we can do it).
 
 \begin{figure}[htb!]
 \begin{center}
-\includegraphics[width=6cm]{image_mod2_exp13_exp15.eps} 
+\includegraphics[width=6cm]{image_mod2_exp13_exp15.pdf} 
 \end{center}
 \caption{ The sequence of $(X_i)_i$ has an exponential distribution with parameter $\lambda=1/3$ and 
 the sequence of $(Y_i)_i$ has an exponential distribution with parameter $\mu=1/5$. The simulation is made for 1000  beds with 1000 patients on each bed within the framework of the model with random side effects.} 
@@ -684,7 +686,7 @@ It is difficult to get a feel for the reliability of the curve, especially towar
 \begin{center}
 \begin{figure}
 $\begin{array}{cc}
-\includegraphics[width=8cm]{d100exp_exp.eps} & \includegraphics[width=8cm]{d1000exp_exp.eps} \\
+\includegraphics[width=8cm]{d100exp_exp.pdf} & \includegraphics[width=8cm]{d1000exp_exp.pdf} \\
 \end{array}$
 \caption{The Kaplan-Meier's variant estimation with $100$ and $1000$ patients, and $(X_i) \sim \varepsilon(\lambda)$ and $p \sim \varepsilon(\mu)$. The green plot is the survival function got thanks to our study ; the red one is the theoretical one.} 
 \end{figure}
