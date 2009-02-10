@@ -25,9 +25,9 @@ disP is a 3 elements list : disfun stands for a distribution function
   \item{plotDV}{ a logical for : do you want to plot the De Vielder "function" }
 }
 \value{
-
+a NULL object.
 }
-\author{ CJ }
+\author{ Christophe Dutang and Julie Barthes }
 \examples{
 #use mainSimul to make the first argument
 arg1Exp<-list(rangen=rexp,nbparam=1,param=list(1/3));

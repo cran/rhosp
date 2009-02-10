@@ -48,5 +48,6 @@ function(file, nbPatient,disXi,disYi)
 		#    precise value you want written to the file in 'sep'.  For even
 		#    more control, use 'writeChar' on a binary connection.
 
+            return(NULL)
 }
 

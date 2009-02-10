@@ -26,7 +26,7 @@ disYi is a 3 elements list : rangen stands for  a random positive variable gener
 \value{
   T the vector of durations between two declared side effects
 }
-\author{ CJ }
+\author{ Christophe Dutang and Julie Barthes }
 \examples{
 arg1Exp<-list(rangen=rexp,nbparam=1,param=list(1/2));
 arg2Exp<-list(rangen=rexp,nbparam=1,param=list(1/20));

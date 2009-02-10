@@ -1,6 +1,8 @@
 "histo" <-
 function(X,disXi=NULL,disP=NULL,plotDV=FALSE)
 {      
+       arg2Cst<-list(disfun=pcst<-function(x,p) p ,nbparam=1,param=list(1/20));
+    
 	if(	length(X$T) !=0)
 	{
 		#initialise variables
@@ -137,5 +139,6 @@ function(X,disXi=NULL,disP=NULL,plotDV=FALSE)
 	{
 		stop("empty data T")
 	}
+    return(NULL)
 }
 

@@ -22,8 +22,9 @@ disYi is a 3 elements list : rangen stands for  a random positive variable gener
 }
 }
 \value{
+a NULL object.
 }
-\author{ CJ }
+\author{ Christophe Dutang and Julie Barthes }
 \examples{
 
 arg1ExpMod2<-list(rangen=rexp,nbparam=1,param=list(1/2));
@@ -40,3 +41,4 @@ makeSample2("thedata.rda",200,arg1ExpMod2,arg2ExpMod2)
 
 }
 \keyword{ file}
+

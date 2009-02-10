@@ -27,7 +27,7 @@ disP is a 3 elements list : disfun stands for a distribution function
   T the vector of durations between two declared side effects
 
 }
-\author{ CJ }
+\author{ Christophe Dutang and Julie Barthes }
 \note{ further notes }
 
 

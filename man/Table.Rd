@@ -17,7 +17,7 @@ Table(file, nb = 10, mod)
 }
 \value{
 }
-\author{ Cj }
+\author{ Christophe Dutang and Julie Barthes }
 \examples{
 
 #Table("d.rda",100,3)

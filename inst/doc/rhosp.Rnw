@@ -50,7 +50,7 @@
        \\[5cm]
 	\textsf{An actuary approach of risk evaluation during hospitalizations}}
 \vspace{2.5cm}
-\author{Julie Barthés \and Christophe Dutang}
+\author{Julie Barth\'es \and Christophe Dutang}
 
 
 

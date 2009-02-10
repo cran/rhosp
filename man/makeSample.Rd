@@ -21,8 +21,9 @@ disP is a 3 elements list : disfun stands for a distribution function
  }
 }
 \value{
+a NULL object.
 }
-\author{ CJ }
+\author{ Christophe Dutang and Julie Barthes }
 \examples{
 arg1Exp<-list(rangen=rexp,nbparam=1,param=list(1/3));
 
@@ -31,3 +32,4 @@ arg2Exp<-list(disfun=pexp,nbparam=1,param=list(1/5));
 makeSample("mydata.rda",200,arg1Exp,arg2Exp)
 }
 \keyword{ file }
+

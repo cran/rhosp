@@ -1,5 +1,5 @@
 "calcErrorParam" <-
-function(file,nb=10,disXi=arg1Exp,disP=arg2Exp,plot=TRUE)
+function(file,nb=10,disXi,disP,plot=TRUE)
 {
     tabREstim <- 0;
     tabCREstim <- 0;

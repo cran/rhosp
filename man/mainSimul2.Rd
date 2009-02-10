@@ -29,7 +29,7 @@ disYi is a 3 elements list : rangen for  a random positive variable generator
   \item{R }{R a risk constant}
   \item{CR}{CR a risk constant}
 }
-\author{ CJ }
+\author{ Christophe Dutang and Julie Barthes }
 
 \examples{
 

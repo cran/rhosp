@@ -36,7 +36,7 @@ make simulation and estimation on the sample
   \item{lambdaEmp}{estimate of lambda}
   \item{muEmp}{estimate of mu}
 }
-\author{ CJ }
+\author{ Christophe Dutang and Julie Barthes }
 
 \examples{
 arg1Exp<-list(rangen=rexp,nbparam=1,param=list(1/3));

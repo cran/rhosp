@@ -1,4 +1,4 @@
-calcErrorNonParam <- function(file,nb=10,disXi=arg1Exp,disP=arg2Exp,plot=TRUE)
+calcErrorNonParam <- function(file,nb=10,disXi,disP,plot=TRUE)
 {
     tabREstim <- 0;
     tabCREstim <- 0;

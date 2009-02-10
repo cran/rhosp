@@ -2,11 +2,11 @@
 \alias{calcErrorDV}
 \title{ compute the bias, variance of the De Vielder approximation  }
 \description{
-	calcErrorDV computes the risk constant R with the emph{De Vielder} estimator
+	calcErrorDV computes the risk constant R with the \emph{De Vielder} estimator
 	and its bias and variance.
 }
 \usage{
-calcErrorDV(file, nb = 10, disXi = arg1Exp, disP = arg2Exp, plot = TRUE)
+calcErrorDV(file, nb = 10, disXi, disP, plot = TRUE)
 }
 \arguments{
   \item{file}{ the file in which the simulated data will be stored }
@@ -28,14 +28,13 @@ disP is a 3 elements list : disfun stands for a distribution function
   \item{R}{the risk constant estimated}
   \item{CR}{the CR risk constant calculated with R}
 }
-\author{ CJ }
+\author{ Christophe Dutang and Julie Barthes }
 \examples{
-#arg1Exp<-list(rangen=rexp,nbparam=1,param=list(1/3));
-#arg2Exp<-list(disfun=pexp,nbparam=1,param=list(1/5));
-
-
-#res<-calcErrorDV("data.rda",25,arg1Exp,arg2Exp,TRUE)
-
+\dontrun{
+arg1Exp<-list(rangen=rexp,nbparam=1,param=list(1/3));
+arg2Exp<-list(disfun=pexp,nbparam=1,param=list(1/5));
+res<-calcErrorDV("data.rda",25,arg1Exp,arg2Exp,TRUE)
+}
 }
 \keyword{ utilities }
 

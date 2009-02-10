@@ -26,7 +26,7 @@ estimDV(fileName, toplot = TRUE, header = TRUE, ks = FALSE)
   \item{lambdaEmp}{the estimation of the lambda of the De Vielder method (in this case the same value as lambdaHat)}
   \item{muEmp}{the estimation of the mu of the De Vielder method (in this case the same value as mu)}
 }
-\author{CJ}
+\author{ Christophe Dutang and Julie Barthes }
 \examples{
 
 #res<-estimDV("data.rda",TRUE,TRUE)

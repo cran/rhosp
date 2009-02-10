@@ -28,7 +28,7 @@ estimParam(fileName, toplot = TRUE, header = TRUE, ks = FALSE, DV = FALSE)
   \item{lambdaEmp}{the estimation of the lambda of the De Vielder method (only available if \code{DV=TRUE} and if there is no problem with De Vielder method)}
   \item{muEmp}{the estimation of the mu of the De Vielder method (only available if \code{DV=TRUE})}
 }
-\author{CJ}
+\author{ Christophe Dutang and Julie Barthes }
 \examples{
 
 #res<-estimDV("data.rda",TRUE,TRUE)

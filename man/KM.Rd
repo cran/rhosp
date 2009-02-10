@@ -18,7 +18,7 @@ KM(fileName, toplot = TRUE, header = TRUE)
 }
 
 
-\author{ CJ }
+\author{ Christophe Dutang and Julie Barthes }
 
 \examples{
 #KM("data.rda",TRUE,TRUE)
