@@ -1,0 +1,14 @@
+citHeader("To cite rhosp in publications use:")
+
+
+citEntry(entry="Manual",
+         title = "rhosp: an actuary approach of risk evaluation during hospitalizations.",
+         author = "Julie Barth\'es, Christophe Dutang",
+	 year = 2006,
+         note = "R package version 1.05",
+         textVersion =
+	 paste(	"J. Barthes and C. Dutang",
+		"(2006),",
+	       	"rhosp: an actuary approach of risk evaluation during hospitalizations.")
+)
+

@@ -4,7 +4,7 @@
 \description{
    estimParam compute the parametric estimation of the first model on the input file
    containing the stay duration Xi and the side effect reporting Zi. this estimator of mu
-   is the estimatoçr of maximum likelihood of the random variable \eqn{Zi / Xi=x}. the risk constant
+   is the estimator of maximum likelihood of the random variable \eqn{Zi / Xi=x}. the risk constant
    R is given by the equation (star) \eqn{R=mu}.
 }
 \usage{

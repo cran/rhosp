@@ -16,6 +16,7 @@ Table(file, nb = 10, mod)
     third mod makes simulation for a case with the parametric and non parametric estimatorse }
 }
 \value{
+Null.
 }
 \author{ Christophe Dutang and Julie Barthes }
 \examples{
