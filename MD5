@@ -1,4 +1,4 @@
-49ce952ec7c737332bf8e48f07c67ebe *DESCRIPTION
+3ecefd01c69be52af44eb47023c2ec60 *DESCRIPTION
 c36387fbba6478ab9c5dca42273a1f38 *NAMESPACE
 3ed63cb87fe0edd1fbee9a984a513fd9 *R/DV.R
 f6f21f5e644c335a01edb446464ba743 *R/KM.R
@@ -21,10 +21,10 @@ c2a293fcc58810c98674eeeacefff2b7 *R/mainSimul.R
 1ed2319a567c81bf4e73fc6138362b4a *R/mom2.R
 2f1fd5248c2293df9dc65b8875cb13d9 *R/simul.R
 778038ba30ceae8083381bb2264b02f5 *R/simul2.R
-8b7ac65f8486efe02338779c539472e9 *build/vignette.rds
-dda6e5fa2d9362c7cce49d0c8f35567e *inst/CITATION
-30a2c66b977eb4865f97caa6e258859e *inst/doc/rhosp.Rnw
-ba6a5710d88ed47d15e94c05b2e62049 *inst/doc/rhosp.pdf
+921c7460da0068e56b6f67322dda05de *build/vignette.rds
+aff3b3ca6ece6f6224973fb9d2a5589f *inst/CITATION
+00573876fc0d7dcf824ebe7b5ad7b00f *inst/doc/rhosp.Rnw
+b0c918d81d9dab45172d80977a520533 *inst/doc/rhosp.pdf
 c03c7e13f62eee0016cd179c397eb5cb *man/DV.Rd
 61c41c0aea381102cd7ed02f6d38a831 *man/KM.Rd
 3c3f3c41a847807006203068094d84e4 *man/Table.Rd
@@ -55,4 +55,4 @@ cde29547cacc4cadb221196ec135908c *vignettes/image_mod1_exp13_gamma3_13_1000_1000
 69f1c9f612554aaf55cc2044daadbf2e *vignettes/image_mod2_exp13_exp15.pdf
 b4cac80510e911b7b3d507e206ef1d80 *vignettes/mod1.pdf
 5e157734a1a69dc9958ad43f9b39578f *vignettes/mod2.pdf
-30a2c66b977eb4865f97caa6e258859e *vignettes/rhosp.Rnw
+00573876fc0d7dcf824ebe7b5ad7b00f *vignettes/rhosp.Rnw

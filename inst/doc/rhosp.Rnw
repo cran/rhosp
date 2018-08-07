@@ -5,12 +5,11 @@
 
 
 
-\documentclass[12pt,twoside]{article}
+\documentclass[12pt]{article}
 
 \usepackage{epsfig}
 \usepackage{latexsym}
 \usepackage{amsxtra}
-\usepackage{vmargin}
 \usepackage{amsfonts,amsmath,amssymb,amsthm}
 \usepackage{color,graphics}
 \usepackage{courier}
@@ -54,7 +53,7 @@
 \SweaveOpts{concordance=TRUE}
 %==========================================================
 
-\setpapersize{A4}
+%\setpapersize{A4}
 
 \addtolength{\parskip}{2mm}
 \maketitle
